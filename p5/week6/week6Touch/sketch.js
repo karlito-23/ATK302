@@ -9,9 +9,9 @@ function draw() {
   background(100);
   if (touches.length > 0) {
     for (var i = 0; i < touches.length; i++) {
-      text("touches x = " + touches[i].x + ", " + touches[i].y, 20, 50 * (i+1));
+      text("touches x = " + touches[i].x + ", " + touches[i].y, 20, 50 * (i + 1));
     }
   }
 }
 
-console.log(touches) 
+console.log(touches)

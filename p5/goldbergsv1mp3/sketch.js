@@ -1,22 +1,26 @@
-var song1;
+var myState = 1 ; // at the top of the program, above the setup
 
-function preload() {
-  song1 = loadSound('assets/GoldbergV1.mp3');  // find an otf or ttf
-}
 
-function setup () {
-  createCanvas (800,800);
-  song1.play();
-}
+
 function draw() {
-  // put drawing code here
+
+switch(myState) {
+
+   case 0:
+   console.log("Go") ;
+   myState = 7 ;
+   break ;
+
+   case 1:
+   console.log("You") ;
+   myState = 2 ;
+   break ;
+
+   case 2:
+   console.log("Redbirds!") ;
+   myState = 0 ;
+   break ;
+
 }
 
-function mouseReleased(){
-  if (song1.isplaying()) {
-    song1.pause();
-
-  }else {
-    song1.play();
-  }
 }

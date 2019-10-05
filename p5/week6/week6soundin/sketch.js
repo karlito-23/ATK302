@@ -14,16 +14,14 @@ function draw() {
 
   fill ('#8EFDFF')
   ellipse (470,y,100,100);
-
+ fill('yellow')
   ellipse (x,470,100,100);
   text("AHHHHHH WATCH OUT",50,y)
   vol = mic.getLevel(); // level is between 0 and 1
   vol = vol * 100; // you may need to change this
 
   if (vol > 3) {
-    // do something
     y++ ;
-
   }
 
   if (vol > 3){
