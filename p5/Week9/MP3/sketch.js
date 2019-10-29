@@ -24,7 +24,7 @@ splashscreen=loadImage("assets/welcome-01.png");
   bikeAnim[2] = loadImage("assets/bike3-01.png");
   // add more bikes here
 
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i < 7; i++) {
     bikes.push(new Bike());
   }
 
