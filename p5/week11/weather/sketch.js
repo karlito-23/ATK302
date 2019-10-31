@@ -49,11 +49,6 @@ function draw() {
     ellipse (x-271,353,70,50);
     ellipse (x-213,382,40,50);
     ellipse (x-247,379,67,50);
-    // ellipse (x,335,50,78);
-    // ellipse (x,353,40,50);
-    // ellipse (x,353,70,50);
-    // ellipse (x,382,40,50);
-    // ellipse (x,379,67,50);
     x=x+ wspeed/4 ;
     if(x>width)x=0;
 
@@ -62,8 +57,6 @@ fill('red');
 var tempMap=0;
 tempMap=map(tempr,-10,100,0,height-10);
 rect(350,height-10,30,-tempMap); //- height makes go up instead of down
-
       break;
-
   }
 }
