@@ -20,7 +20,7 @@ function setup() {
   bunnyImage = loadImage("assets/bike3-01.png");
   imageMode(CENTER);
   rectMode(CENTER);
-  for (var i = 0; i < 40; i++) {
+  for (var i = 0; i < 10; i++) {
     cars.push(new Car(i));
   }
 
@@ -90,7 +90,8 @@ function draw() {
   textSize(300);
   textAlign(CENTER);
   text("atk", width / 2, height / 2);
-
+  frogPos.x=xPosition;
+  frogPos.y=yPosition;
 }
 }
 
@@ -131,6 +132,7 @@ function Car(num) {
     ellipse(this.pos.x - 5, this.pos.y + 20, 20, 20);
     ellipse(this.pos.x + 45, this.pos.y + 20, 20, 20);
   }
+}
 
 // HERE'S THE STUFF YOU NEED FOR READING IN DATA!!!
 
