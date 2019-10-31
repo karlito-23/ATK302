@@ -6,7 +6,7 @@ var wspeed = 0;
 var x=0;
 var tempr =0;
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(800, 800);
 
   // HERE Is the call to get the weather. PLEASE PUT YOUR OWN ID IN HERE!!!
   // MINE WILL STOP WORKING IF EVERYONE USES IT!!!
@@ -44,8 +44,16 @@ function draw() {
 //make cloud go across the screen
     fill('white');
     noStroke();
-    ellipse(x,240,230,50);
-    ellipse(x,300,200,100);
+    ellipse (x-245,335,50,78);
+    ellipse (x-216,353,40,50);
+    ellipse (x-271,353,70,50);
+    ellipse (x-213,382,40,50);
+    ellipse (x-247,379,67,50);
+    // ellipse (x,335,50,78);
+    // ellipse (x,353,40,50);
+    // ellipse (x,353,70,50);
+    // ellipse (x,382,40,50);
+    // ellipse (x,379,67,50);
     x=x+ wspeed/4 ;
     if(x>width)x=0;
 

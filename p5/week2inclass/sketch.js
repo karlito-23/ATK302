@@ -65,19 +65,11 @@ function draw() {
   ellipse (445,335,100,100)
 
 fill ( 'white' ) ;
-ellipse (245,335,50,78)
-
-fill ( 'white' ) ;
-ellipse (216,353,40,50)
-
-fill ( 'white' ) ;
-ellipse (271,353,70,50)
-
-fill ( 'white' ) ;
-ellipse (213,382,40,50)
-
-fill ( 'white' ) ;
-ellipse (247,379,67,50)
+ellipse (245,335,50,78);
+ellipse (216,353,40,50);
+ellipse (271,353,70,50);
+ellipse (213,382,40,50);
+ellipse (247,379,67,50);
 
 fill('green');
 rect(0,483,800,100)
